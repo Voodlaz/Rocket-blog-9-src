@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Rust Homepage</title>
+  <link rel="stylesheet" href="css/homepage.css" ></link>
+  <link rel="stylesheet" href="css/new_post_form.css"></link>
+</head>
+<body>
+  <div class="topnav">
+    <a>BLOG.RS</a>
+  </div>
+  <div class="form">
+    <form method="post">
+      <p>Name:<input type="text" name="name" id="name"></p>
+      <p>Name:<input type="text" name="body" id="body"></p>
+      <p><input type="submit" class="submit" value="submit"></p>
+      {% if validation_error %}
+        {{ validation_error }}
+      {% endif %}
+    </form>
+  </div>
+</body>
+</html>
